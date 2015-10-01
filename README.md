@@ -1,9 +1,9 @@
 # connect-block-hotlinks
 
 I wrote this middleware to keep people from embedding my site's images into their own sites.
-It compares the HTTP headers 'Host' and 'Referer' to make sure they are from the same 2nd-level domain.
-For example, if Host is 'img.example.com' then referer can be 'http://example.com/' or 'http://blog.example.com/'
-but not 'http://another.com/'.
+It compares the HTTP headers `Host` and `Referer` to make sure they are from the same 2nd-level domain.
+For example, if Host is `img.example.com` then referer can be `http://example.com/` or `http://blog.example.com/`
+but not `http://another.com/`.
 
 This will not stop a determined attacker! For that you should use CORS and authentication mechanisms. But it will
 prevent people stealing your bandwidth by using a URL to your image in the 'src' of an <image> tag on another site.
