@@ -1,0 +1,3 @@
+# Treat CoffeeScript as source code
+*.coffee
+node_modules
